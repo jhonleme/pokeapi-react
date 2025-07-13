@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import lucarioBanner from './assets/Lucario_Pokeone.png';
 
 function App() {
   const [pokemons, setPokemons] = useState([]);
@@ -21,7 +20,7 @@ function App() {
   return (
     <div>
       <img
-        src={lucarioBanner}
+        src="/Lucario_Pokeone.png"
         alt="Pokéone Banner"
         style={{ width: '100%', maxWidth: '600px', marginBottom: '20px' }}
       />
