@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
+import lucarioBanner from './assets/Lucário_Pokéone.png';
 
 function App() {
   const [pokemons, setPokemons] = useState([]);
 
   useEffect(() => {
-    fetch("https://pokeapi.co/api/v2/pokemon?limit=100")
+    fetch("https://pokeapi.co/api/v2/pokemon?limit=151")
       .then(response => response.json())
       .then(data => {
         const promises = data.results.map(poke =>
@@ -19,6 +20,11 @@ function App() {
 
   return (
     <div>
+      <img
+        src={lucarioBanner}
+        alt="Pokéone Banner"
+        style={{ width: '100%', maxWidth: '600px', marginBottom: '20px' }}
+      />
       <h1>Lista de Pokémons</h1>
       <ul>
         {pokemons.map(poke => (
