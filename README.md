@@ -34,7 +34,7 @@ Aplicação simples em **React + Vite** que consome a [PokeAPI](https://pokeapi.
 
 ### ✅ Lista de Pokémons
 
-![Tela do app](./print-pokeapp.png)
+![Tela do app](public/Lucário_Pokéone.png)
 
 ---
 
