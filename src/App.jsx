@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import lucarioBanner from './assets/Lucário_Pokéone.png';
+import lucarioBanner from './assets/Lucario_Pokeone.png';
 
 function App() {
   const [pokemons, setPokemons] = useState([]);
